@@ -8,60 +8,74 @@
     tools:context=".player5">
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="272dp"
+        android:id="@+id/imageViewPlayer5"
+        android:layout_width="0dp"
         android:layout_height="260dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_676734" />
 
     <Button
-        android:id="@+id/button19"
-        android:layout_width="240dp"
+        android:id="@+id/btnPlayer5_1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="36dp"
-        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_state2"
+        android:onClick="onButtonClicked"
         android:text="jay woodcroft"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPlayer5" />
 
     <Button
-        android:id="@+id/button20"
-        android:layout_width="240dp"
+        android:id="@+id/btnPlayer5_2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_state2"
+        android:onClick="onButtonClicked"
         android:text="Jack Campbell"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button19" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayer5_1" />
 
     <Button
-        android:id="@+id/button21"
-        android:layout_width="240dp"
+        android:id="@+id/btnPlayer5_3"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_state2"
+        android:onClick="onButtonClicked"
         android:text="derek ryan"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button20" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayer5_2" />
 
     <Button
-        android:id="@+id/button22"
-        android:layout_width="240dp"
+        android:id="@+id/btnPlayer5_4"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/btn_state"
+        android:onClick="onButtonClicked"
         android:text="Stuart Skinner"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button21" />
+        app:layout_constraintTop_toBottomOf="@+id/btnPlayer5_3" />
 </android.support.constraint.ConstraintLayout>
