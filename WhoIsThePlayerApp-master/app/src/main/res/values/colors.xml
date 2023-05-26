@@ -8,6 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="orange">#FF5722</color>
-    <color name="wrong">#CC0000</color>
-    <color name="right">#35E43C</color>
+    <color name="wrong">#F40202</color>
+    <color name="right">#0DF316</color>
 </resources>

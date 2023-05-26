@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,75 +7,93 @@
     android:background="#081A80"
     tools:context=".player4">
 
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Player 4"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/imageViewPlayer4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageViewPlayer4"
-        android:layout_width="0dp"
-        android:layout_height="257dp"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView9"
         app:srcCompat="@drawable/feature_nurse34" />
 
-    <Button
-        android:id="@+id/btnPlayer4_1"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/btn_state"
-        android:onClick="onButtonClicked"
-        android:text="Evander Kane"
-        android:textStyle="bold"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewPlayer4" />
+        app:layout_constraintTop_toBottomOf="@id/imageViewPlayer4"
+        app:layout_constraintVertical_bias="0.0">
 
-    <Button
-        android:id="@+id/btnPlayer4_2"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/btn_state2"
-        android:onClick="onButtonClicked"
-        android:text="Darnell Nurse"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPlayer4_1" />
+        <Button
+            android:id="@+id/btnPlayer4_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn_state2"
+            android:onClick="onButtonClicked"
+            android:text="Evander Kane"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnPlayer4_3"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/btn_state2"
-        android:onClick="onButtonClicked"
-        android:text="Connor McDavid"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPlayer4_2" />
+        <Button
+            android:id="@+id/btnPlayer4_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn_state"
+            android:onClick="onButtonClicked"
+            android:text="Darnell Nurse"
+            android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btnPlayer4_4"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:background="@drawable/btn_state2"
-        android:onClick="onButtonClicked"
-        android:text="Zach Hyman"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPlayer4_3" />
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/btnPlayer4_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn_state2"
+            android:onClick="onButtonClicked"
+            android:text="Connor McDavid"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnPlayer4_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/btn_state2"
+            android:onClick="onButtonClicked"
+            android:text="Zach Hyman"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

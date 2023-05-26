@@ -5,95 +5,111 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#081A80"
-    tools:context=".player1">
+    tools:context=".player3">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Player 1"
+        android:layout_marginTop="4dp"
+        android:text="Player 3"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@id/imageViewPlayer3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="230dp"
+        android:id="@+id/imageViewPlayer3"
+        android:layout_width="322dp"
+        android:layout_height="194dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView6"
-        app:srcCompat="@drawable/communityicon_phsb543682591" />
+        app:layout_constraintTop_toBottomOf="@id/textView8"
+        app:srcCompat="@drawable/ryan_nugent_hopkins234" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewPlayer3">
+
+        <Button
+            android:id="@+id/btnPlayer3_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_state2"
+            android:onClick="onButtonClicked"
+            android:text="Mattias Janmark"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btnPlayer3_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_state2"
+            android:onClick="onButtonClicked"
+            android:text="Klim Kostin"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView">
+        app:layout_constraintTop_toBottomOf="@id/linearLayout">
 
         <Button
-            android:id="@+id/btnPlayer1_1"
+            android:id="@+id/btnPlayer3_3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:background="@drawable/btn_state2"
-            android:onClick="onButtonClicked"
-            android:text="Devin Shore"
-            android:textStyle="bold"
-            tools:text="Devin Shore" />
-
-        <Button
-            android:id="@+id/btnPlayer1_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
             android:background="@drawable/btn_state"
             android:onClick="onButtonClicked"
-            android:text="Connor Mcdavid"
+            android:text="Ryan Nugent-Hopkins"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/btnPlayer1_3"
+            android:id="@+id/btnPlayer3_4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
+            android:layout_marginBottom="4dp"
+            android:layout_weight="1"
             android:background="@drawable/btn_state2"
             android:onClick="onButtonClicked"
-            android:text="Evander Kane"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/btnPlayer1_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp"
-            android:background="@drawable/btn_state2"
-            android:onClick="onButtonClicked"
-            android:text="Zach Hyman"
+            android:text="Mattias Ekholm"
             android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,21 +1,51 @@
 package com.example.whoistheplayer;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.RadioButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class player1 extends AppCompatActivity {
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_item, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+
+            case R.id.help:
+                Intent help = new Intent(this, help.class);
+                startActivity(help);
+                return true;
+            case R.id.home:
+                Intent home = new Intent(this, MainActivity.class);
+                startActivity(home);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
 
     Button btn1;
     Button btn2;
     Button btn3;
     Button btn4;
     int score=0;
+
+    ImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +56,13 @@ public class player1 extends AppCompatActivity {
         btn2 = findViewById(R.id.btnPlayer1_2);
         btn3 = findViewById(R.id.btnPlayer1_3);
         btn4 = findViewById(R.id.btnPlayer1_4);
+        image = findViewById(R.id.imageView);
+
+        //animation loading
+
+        Animation anim = AnimationUtils.loadAnimation(player1.this, R.anim.fadein);
+        image.setAnimation(anim);
+        anim.start();
     }
 
 
